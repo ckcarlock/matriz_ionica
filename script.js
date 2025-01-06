@@ -57,45 +57,42 @@ function crearMatriz() {
 }
 
 function manejarSeleccion(celda, i, j) {
+    const tabla = document.getElementById("matriz-ionica");
+
     if (celdaSeleccionada === celda) {
         // Deseleccionar si la misma celda fue seleccionada
         deseleccionarCelda();
     } else {
         // Resaltar la nueva celda
+        deseleccionarCelda(); // Quitar selección previa
+        tabla.classList.add("toggled-blur"); // Aplicar efecto borroso a la tabla
         resaltarCelda(celda, i, j);
     }
 }
 
 function resaltarCelda(celda, i, j) {
-    deseleccionarCelda(); // Deseleccionar la anterior
-
-    // Resaltar la celda actual
-    celda.classList.add("selected");
-    celdaSeleccionada = celda;
-
-    // Hacer la matriz borrosa
-    document.getElementById("matriz-ionica").classList.add("blur-background");
-
-    // Mostrar fórmula y nombre en la celda seleccionada
     const clave = `${ionesNegativos[j]}${ionesPositivos[i]}`;
     const detalle = formulas[clave] || { formula: "Desconocido", nombre: "Desconocido" };
+
+    celdaSeleccionada = celda;
+    celda.classList.add("selected");
     celda.innerHTML = `<div><strong>${detalle.formula}</strong><br>${detalle.nombre}</div>`;
 
-    // Permitir que la celda actúe como botón para deseleccionar
+    // Permitir que el cuadro actúe como botón para deseleccionar
     celda.addEventListener("click", deseleccionarCelda);
 }
 
 function deseleccionarCelda() {
+    const tabla = document.getElementById("matriz-ionica");
+
     if (celdaSeleccionada) {
-        // Quitar resaltado de la celda
         celdaSeleccionada.classList.remove("selected");
         celdaSeleccionada.innerHTML = ""; // Limpiar contenido
-        celdaSeleccionada.removeEventListener("click", deseleccionarCelda); // Eliminar evento de deselección
+        celdaSeleccionada.removeEventListener("click", deseleccionarCelda); // Eliminar evento
         celdaSeleccionada = null;
     }
 
-    // Quitar el desenfoque de la matriz
-    document.getElementById("matriz-ionica").classList.remove("blur-background");
+    tabla.classList.remove("toggled-blur"); // Quitar el efecto borroso
 }
 
 crearMatriz();
