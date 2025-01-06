@@ -24,6 +24,11 @@ h2 {
     background-color: white;
 }
 
+#matriz-ionica.toggled-blur td:not(.selected) {
+    filter: blur(5px); /* Aplicar el efecto borroso a todas menos la seleccionada */
+    pointer-events: none;
+}
+
 #matriz-ionica td.selected {
     background-color: #d0f0d0;
     z-index: 10;
@@ -31,28 +36,13 @@ h2 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 300px; /* Tamaño del cuadro */
-    height: 200px; /* Tamaño del cuadro */
+    width: 400px; /* Tamaño del cuadro */
+    height: 250px; /* Tamaño del cuadro */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em; /* Tamaño del texto */
+    font-size: 1.5em; /* Tamaño del texto */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    cursor: pointer; /* Actuar como botón */
-}
-
-.blur-background {
-    filter: blur(5px);
-    pointer-events: none;
-}
-
-#matriz-ionica td.ion-row,
-#matriz-ionica td.ion-column {
-    background-color: #f0f0f0;
-    cursor: default;
-}
-
-.hidden {
-    display: none;
+    cursor: pointer;
 }
