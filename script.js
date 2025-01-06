@@ -10,7 +10,7 @@ const formulas = {
     "O-2K+1": {formula: "K2O", nombre: "Óxido de potasio"},
     "O-2Ba+2": {formula: "BaO", nombre: "Óxido de bario"},
     "O-2Al+3": {formula: "Al2O3", nombre: "Óxido de aluminio"},
-    // Completa con el resto de combinaciones necesarias
+    // Agrega más combinaciones según sea necesario
 };
 
 let celdaSeleccionada = null;
@@ -46,7 +46,7 @@ function crearMatriz() {
         for (let j = 0; j < ionesNegativos.length; j++) {
             const celda = document.createElement("td");
             if (i === 0) {
-                celda.classList.add("vacía");
+                celda.classList.add("vacía"); // No permitir seleccionar la primera fila y columna
             } else {
                 celda.classList.add("vacía");
                 celda.addEventListener("click", function() {
