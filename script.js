@@ -1,8 +1,8 @@
-const ionesPositivos = ["H+1", "K+1", "Ba+2", "Al+3", "Pb+4", "Ni+3", "Hg+1"];
+const ionesPositivos = ["H<sup>+1</sup>", "K<sup>+1</sup>", "Ba<sup>+2</sup>", "Al+3", "Pb+4", "Ni+3", "Hg+1"];
 const ionesNegativos = ["", "H-1", "O-2", "(OH)-1", "(SO4)-2", "(PO3)-3", "(NO2)-1", "(ClO)-1"];
 
 const formulas = {
-    "H-1H+1": {formula: "H2", nombre: "Hidrógeno"},
+    "H<sup>-1</sup>H<sup>+1</sup>": {formula: "H<sub>2</sub>", nombre: "Hidrógeno"},
     "H-1K+1": {formula: "KH", nombre: "Hidruro de potasio"},
     "H-1Ba+2": {formula: "BaH2", nombre: "Hidruro de bario"},
     "H-1Al+3": {formula: "AlH3", nombre: "Hidruro de aluminio"},
