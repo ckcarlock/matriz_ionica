@@ -26,29 +26,19 @@ h2 {
 
 #matriz-ionica td.selected {
     background-color: #d0f0d0;
-    transform: scale(5); /* Hacerlo más grande */
     z-index: 10;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) scale(5); /* Centrado absoluto */
-    box-sizing: border-box;
-    padding: 30px;
-    width: auto;
-    height: auto;
-    min-width: 250px;
-    min-height: 250px;
-}
-
-#detalle {
-    text-align: center;
-    margin-top: 20px;
-    display: none;
-}
-
-#detalle p {
-    font-size: 1.2em;
-    font-weight: bold;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Más grande para acomodar texto */
+    height: 200px; /* Más grande para acomodar texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em; /* Aumentar tamaño de texto */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .blur-background {
@@ -60,4 +50,8 @@ h2 {
 #matriz-ionica td.ion-column {
     background-color: #f0f0f0;
     cursor: default;
+}
+
+.hidden {
+    display: none;
 }
