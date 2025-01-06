@@ -46,7 +46,7 @@ function crearMatriz() {
         for (let j = 1; j < ionesNegativos.length; j++) { // Comenzar en la columna 2
             const celda = document.createElement("td");
             celda.classList.add("vacía");
-            celda.addEventListener("click", function() {
+            celda.addEventListener("click", function () {
                 manejarSeleccion(celda, i, j);
             });
             fila.appendChild(celda);
@@ -78,8 +78,11 @@ function resaltarCelda(celda, i, j) {
 
     // Mostrar fórmula y nombre en la celda seleccionada
     const clave = `${ionesNegativos[j]}${ionesPositivos[i]}`;
-    const detalle = formulas[clave] || {formula: "Desconocido", nombre: "Desconocido"};
+    const detalle = formulas[clave] || { formula: "Desconocido", nombre: "Desconocido" };
     celda.innerHTML = `<div><strong>${detalle.formula}</strong><br>${detalle.nombre}</div>`;
+
+    // Permitir que la celda actúe como botón para deseleccionar
+    celda.addEventListener("click", deseleccionarCelda);
 }
 
 function deseleccionarCelda() {
@@ -87,6 +90,7 @@ function deseleccionarCelda() {
         // Quitar resaltado de la celda
         celdaSeleccionada.classList.remove("selected");
         celdaSeleccionada.innerHTML = ""; // Limpiar contenido
+        celdaSeleccionada.removeEventListener("click", deseleccionarCelda); // Eliminar evento de deselección
         celdaSeleccionada = null;
     }
 
