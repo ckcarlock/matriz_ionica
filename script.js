@@ -30,6 +30,9 @@ const formulas = {
     "O<sup>-2</sup>K<sup>+1</sup>": { formula: "K<sub>2</sub>O", nombre: "Óxido de potasio" },
     "O<sup>-2</sup>Ba<sup>+2</sup>": { formula: "BaO", nombre: "Óxido de bario" },
     "O<sup>-2</sup>Al<sup>+3</sup>": { formula: "Al<sub>2</sub>O<sub>3</sub>", nombre: "Óxido de aluminio" },
+    "O<sup>-2</sup>Pb<sup>+4</sup>": {formula: "PbO<sub>2</sub>", nombre: "Óxido de plomo (IV)" },
+    "O<sup>-2</sup>Ni<sup>+3</sup>": {formula: "Ni<sub>2</sub>O<sub>3</sub>", nombre: "Óxido de Niquel (III)" },
+    "O<sup>-2</sup>Hg<sup>+1</sup>": {formula: "Hg<sub>2</sub>O", nombre: "Óxido de Mercurio (I)" },
     // Completa con el resto de combinaciones necesarias
 };
 
