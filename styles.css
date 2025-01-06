@@ -31,14 +31,15 @@ h2 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 300px; /* Más grande para acomodar texto */
-    height: 200px; /* Más grande para acomodar texto */
+    width: 300px; /* Tamaño del cuadro */
+    height: 200px; /* Tamaño del cuadro */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em; /* Aumentar tamaño de texto */
+    font-size: 1.2em; /* Tamaño del texto */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    cursor: pointer; /* Actuar como botón */
 }
 
 .blur-background {
