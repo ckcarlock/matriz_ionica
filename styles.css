@@ -16,30 +16,34 @@ h2 {
     position: relative;
 }
 
-    #matriz-ionica td {
-        padding: 20px;
-        text-align: center;
-        border: 1px solid #ccc;
-        cursor: pointer;
-        background-color: white;
-    }
+#matriz-ionica td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: white;
+}
 
-        #matriz-ionica td.selected {
-            background-color: #d0f0d0;
-            transform: scale(2); /* Aumentar tamaño */
-            z-index: 10;
-        }
+#matriz-ionica td.selected {
+    background-color: #d0f0d0;
+    transform: scale(3); /* Aumentar tamaÃ±o */
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(3); /* Centrado absoluto */
+}
 
 #detalle {
     text-align: center;
     margin-top: 20px;
-    display: none; /* Initially hidden */
+    display: none;
 }
 
-    #detalle p {
-        font-size: 1.2em;
-        font-weight: bold;
-    }
+#detalle p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
 
 .blur-background {
     filter: blur(5px);
