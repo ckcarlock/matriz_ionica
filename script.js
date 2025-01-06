@@ -1,15 +1,32 @@
-const ionesPositivos = ["H<sup>+1</sup>", "K<sup>+1</sup>", "Ba<sup>+2</sup>", "Al+3", "Pb+4", "Ni+3", "Hg+1"];
-const ionesNegativos = ["", "H-1", "O-2", "(OH)-1", "(SO4)-2", "(PO3)-3", "(NO2)-1", "(ClO)-1"];
+const ionesPositivos = [
+    "H<sup>+1</sup>", 
+    "K<sup>+1</sup>", 
+    "Ba<sup>+2</sup>", 
+    "Al<sup>+3</sup>", 
+    "Pb<sup>+4</sup>", 
+    "Ni<sup>+3</sup>", 
+    "Hg<sup>+1</sup>"
+];
+const ionesNegativos = [
+    "", 
+    "H<sup>-1</sup>", 
+    "O<sup>-2</sup>", 
+    "(OH)<sup>-1</sup>", 
+    "(SO<sub>4</sub>)<sup>-2</sup>", 
+    "(PO<sub>3</sub>)<sup>-3</sup>", 
+    "(NO<sub>2</sub>)<sup>-1</sup>", 
+    "(ClO)<sup>-1</sup>"
+];
 
 const formulas = {
-    "H<sup>-1</sup>H<sup>+1</sup>": {formula: "H<sub>2</sub>", nombre: "Hidrógeno"},
-    "H-1K+1": {formula: "KH", nombre: "Hidruro de potasio"},
-    "H-1Ba+2": {formula: "BaH2", nombre: "Hidruro de bario"},
-    "H-1Al+3": {formula: "AlH3", nombre: "Hidruro de aluminio"},
-    "O-2H+1": {formula: "H2O", nombre: "Agua"},
-    "O-2K+1": {formula: "K2O", nombre: "Óxido de potasio"},
-    "O-2Ba+2": {formula: "BaO", nombre: "Óxido de bario"},
-    "O-2Al+3": {formula: "Al2O3", nombre: "Óxido de aluminio"},
+    "H<sup>-1</sup>H<sup>+1</sup>": { formula: "H<sub>2</sub>", nombre: "Hidrógeno" },
+    "H<sup>-1</sup>K<sup>+1</sup>": { formula: "KH", nombre: "Hidruro de potasio" },
+    "H<sup>-1</sup>Ba<sup>+2</sup>": { formula: "BaH<sub>2</sub>", nombre: "Hidruro de bario" },
+    "H<sup>-1</sup>Al<sup>+3</sup>": { formula: "AlH<sub>3</sub>", nombre: "Hidruro de aluminio" },
+    "O<sup>-2</sup>H<sup>+1</sup>": { formula: "H<sub>2</sub>O", nombre: "Agua" },
+    "O<sup>-2</sup>K<sup>+1</sup>": { formula: "K<sub>2</sub>O", nombre: "Óxido de potasio" },
+    "O<sup>-2</sup>Ba<sup>+2</sup>": { formula: "BaO", nombre: "Óxido de bario" },
+    "O<sup>-2</sup>Al<sup>+3</sup>": { formula: "Al<sub>2</sub>O<sub>3</sub>", nombre: "Óxido de aluminio" },
     // Completa con el resto de combinaciones necesarias
 };
 
@@ -25,7 +42,7 @@ function crearMatriz() {
         if (i === 0) {
             celda.classList.add("vacía"); // Primera celda vacía
         } else {
-            celda.textContent = ionesNegativos[i];
+            celda.innerHTML = ionesNegativos[i];
             celda.classList.add("ion-row");
         }
         fila1.appendChild(celda);
@@ -38,7 +55,7 @@ function crearMatriz() {
 
         // Agregar el ion positivo en la primera columna
         const celdaFila = document.createElement("td");
-        celdaFila.textContent = ionesPositivos[i];
+        celdaFila.innerHTML = ionesPositivos[i];
         celdaFila.classList.add("ion-column");
         fila.appendChild(celdaFila);
 
@@ -76,7 +93,12 @@ function resaltarCelda(celda, i, j) {
 
     celdaSeleccionada = celda;
     celda.classList.add("selected");
-    celda.innerHTML = `<div><strong>${detalle.formula}</strong><br>${detalle.nombre}</div>`;
+    celda.innerHTML = `
+        <div>
+            <strong>${detalle.formula}</strong><br>
+            ${detalle.nombre}
+        </div>
+    `;
 
     // Permitir que el cuadro actúe como botón para deseleccionar
     celda.addEventListener("click", deseleccionarCelda);
