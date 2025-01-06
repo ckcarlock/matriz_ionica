@@ -26,12 +26,18 @@ h2 {
 
 #matriz-ionica td.selected {
     background-color: #d0f0d0;
-    transform: scale(3); /* Aumentar tamaño */
+    transform: scale(5); /* Hacerlo más grande */
     z-index: 10;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) scale(3); /* Centrado absoluto */
+    transform: translate(-50%, -50%) scale(5); /* Centrado absoluto */
+    box-sizing: border-box;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    min-width: 250px;
+    min-height: 250px;
 }
 
 #detalle {
