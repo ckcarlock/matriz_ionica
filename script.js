@@ -25,7 +25,7 @@ const formulas = {
     "H<sup>-1</sup>Al<sup>+3</sup>": { formula: "AlH<sub>3</sub>", nombre: "Hidruro de aluminio" },
     "H<sup>-1</sup>Pb<sup>+4</sup>": {formula: "PbH<sub>4</sub>", nombre: "Hidruro de plomo (IV)" },
     "H<sup>-1</sup>Ni<sup>+3</sup>": {formula: "NiH<sub>3</sub>, nombre: "Hidruro de niquel (III)" },
-    "H<sup>-1</sup>Hg<sup>+1</sup>: {formula: "HgH", nombre: "Hidruro de Mercurio (I)
+    "H<sup>-1</sup>Hg<sup>+1</sup>: {formula: "HgH", nombre: "Hidruro de Mercurio (I)" },
     "O<sup>-2</sup>H<sup>+1</sup>": { formula: "H<sub>2</sub>O", nombre: "Agua" },
     "O<sup>-2</sup>K<sup>+1</sup>": { formula: "K<sub>2</sub>O", nombre: "Óxido de potasio" },
     "O<sup>-2</sup>Ba<sup>+2</sup>": { formula: "BaO", nombre: "Óxido de bario" },
