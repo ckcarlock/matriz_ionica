@@ -10,7 +10,7 @@ const formulas = {
     "O-2K+1": {formula: "K2O", nombre: "Óxido de potasio"},
     "O-2Ba+2": {formula: "BaO", nombre: "Óxido de bario"},
     "O-2Al+3": {formula: "Al2O3", nombre: "Óxido de aluminio"},
-    // Agrega más combinaciones según sea necesario
+    // Completa con el resto de combinaciones necesarias
 };
 
 let celdaSeleccionada = null;
@@ -43,16 +43,12 @@ function crearMatriz() {
         fila.appendChild(celdaFila);
 
         // Agregar las celdas vacías que combinan los iones
-        for (let j = 0; j < ionesNegativos.length; j++) {
+        for (let j = 1; j < ionesNegativos.length; j++) { // Comenzar en la columna 2
             const celda = document.createElement("td");
-            if (i === 0) {
-                celda.classList.add("vacía"); // No permitir seleccionar la primera fila y columna
-            } else {
-                celda.classList.add("vacía");
-                celda.addEventListener("click", function() {
-                    manejarSeleccion(celda, i, j);
-                });
-            }
+            celda.classList.add("vacía");
+            celda.addEventListener("click", function() {
+                manejarSeleccion(celda, i, j);
+            });
             fila.appendChild(celda);
         }
 
@@ -62,44 +58,40 @@ function crearMatriz() {
 
 function manejarSeleccion(celda, i, j) {
     if (celdaSeleccionada === celda) {
-        // Si la celda ya está seleccionada, deseleccionarla
+        // Deseleccionar si la misma celda fue seleccionada
         deseleccionarCelda();
     } else {
-        // Si otra celda fue seleccionada, resaltarla
+        // Resaltar la nueva celda
         resaltarCelda(celda, i, j);
     }
 }
 
 function resaltarCelda(celda, i, j) {
-    // Resaltar la celda
+    deseleccionarCelda(); // Deseleccionar la anterior
+
+    // Resaltar la celda actual
     celda.classList.add("selected");
     celdaSeleccionada = celda;
 
     // Hacer la matriz borrosa
     document.getElementById("matriz-ionica").classList.add("blur-background");
 
-    // Mostrar fórmula y nombre
+    // Mostrar fórmula y nombre en la celda seleccionada
     const clave = `${ionesNegativos[j]}${ionesPositivos[i]}`;
     const detalle = formulas[clave] || {formula: "Desconocido", nombre: "Desconocido"};
-    document.getElementById("formula").textContent = `Fórmula: ${detalle.formula}`;
-    document.getElementById("nombre").textContent = `Nombre: ${detalle.nombre}`;
-
-    // Mostrar los detalles
-    document.getElementById("detalle").style.display = "block";
+    celda.innerHTML = `<div><strong>${detalle.formula}</strong><br>${detalle.nombre}</div>`;
 }
 
 function deseleccionarCelda() {
-    // Eliminar resaltado
     if (celdaSeleccionada) {
+        // Quitar resaltado de la celda
         celdaSeleccionada.classList.remove("selected");
+        celdaSeleccionada.innerHTML = ""; // Limpiar contenido
         celdaSeleccionada = null;
     }
 
-    // Quitar el desenfoque
+    // Quitar el desenfoque de la matriz
     document.getElementById("matriz-ionica").classList.remove("blur-background");
-
-    // Ocultar los detalles
-    document.getElementById("detalle").style.display = "none";
 }
 
 crearMatriz();
