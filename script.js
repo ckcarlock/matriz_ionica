@@ -35,7 +35,10 @@ const formulas = {
     "O<sup>-2</sup>Hg<sup>+1</sup>": {formula: "Hg<sub>2</sub>O", nombre: "Óxido de Mercurio (I)" },
     "(OH)<sup>-1</sup>K<sup>+1</sup>": { formula: "KOH", nombre: "Hidroxido de Potasio" },
     "(OH)<sup>-1</sup>Ba<sup>+2</sup>": { formula: "Ba(OH)<sub>2</sub>", nombre: "Hidroxido de Bario"},
-
+    "(OH)<sup>-1</sup>AL<sup>+3</sup>": { formula: "Al(OH)<sub>3</sub>", nombre: "Hidroxido de Aluminio"},
+    "(OH)<sup>-1</sup>Pb<sup>+4</sup>": { formula: "Pb(OH)<sub>4</sub>", nombre: "Hidroxido de Plomo (IV)"},
+    "(OH)<sup>-1</sup>Ni<sup>+3</sup>": { formula: "Ni(OH)<sub>3</sub>", nombre: "Hidroxido de Niquel (III)"},
+    "(OH)<sup>-1</sup>Hg<sup>+1</sup>": { formula: "HgOH", nombre: "Hidroxido de Mercurio (I)"}, 
     // Completa con el resto de combinaciones necesarias
 };
 
