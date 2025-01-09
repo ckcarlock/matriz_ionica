@@ -53,6 +53,13 @@ const formulas = {
     "(PO<sub>3</sub>)<sup>-3</sup>Pb<sup>+4</sup>": { formula: "<sub></sub>", nombre: "(IV)"},
     "(PO<sub>3</sub>)<sup>-3</sup>Ni<sup>+3</sup>": { formula: "<sub></sub>", nombre: "(III)"},
     "(PO<sub>3</sub>)<sup>-3</sup>Hg<sup>+1</sup>": { formula: "<sub></sub>", nombre: "(I)"},
+        "H<sup>+1</sup>": { formula: "<sub></sub>", nombre: ""},
+    "K<sup>+1</sup>": { formula: "<sub></sub>", nombre: ""},
+    "Ba<sup>+2</sup>": { formula: "<sub></sub>", nombre: ""},
+    "Al<sup>+3</sup>": { formula: "<sub></sub>", nombre: ""},
+    "Pb<sup>+4</sup>": { formula: "<sub></sub>", nombre: "(IV)"},
+    "Ni<sup>+3</sup>": { formula: "<sub></sub>", nombre: "(III)"},
+    "Hg<sup>+1</sup>": { formula: "<sub></sub>", nombre: "(I)"},
     // Completa con el resto de combinaciones necesarias
 };
 
