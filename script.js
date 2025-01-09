@@ -49,9 +49,9 @@ const formulas = {
     "(PO<sub>3</sub>)<sup>-3</sup>H<sup>+1</sup>": { formula: "H<sub>3</sub>PO<sub>3</sub>", nombre: "Ácido fosforoso" },
     "(PO<sub>3</sub>)<sup>-3</sup>K<sup>+1</sup>": { formula: "K<sub>3</sub>PO<sub>3</sub>", nombre: "Fosfito de potasio" },
     "(PO<sub>3</sub>)<sup>-3</sup>Ba<sup>+2</sup>": { formula: "Ba<sub>3</sub>(PO<sub>3</sub>)<sub>2</sub>", nombre: "Fosfito de bario" },
-    "(PO<sub>3</sub>)<sup>-3</sup>Al<sup>+3</sup>": { formula: "Al(PO<sub>3</sub>)", nombre: "Fosfito de aluminio" },
+    "(PO<sub>3</sub>)<sup>-3</sup>Al<sup>+3</sup>": { formula: "AlPO<sub>3</sub>", nombre: "Fosfito de aluminio" },
     "(PO<sub>3</sub>)<sup>-3</sup>Pb<sup>+4</sup>": { formula: "Pb<sub>3</sub>(PO<sub>3</sub>)<sub>4</sub>", nombre: "Fosfito de plomo (IV)" },
-    "(PO<sub>3</sub>)<sup>-3</sup>Ni<sup>+3</sup>": { formula: "Ni(PO<sub>3</sub>)", nombre: "Fosfito de níquel (III)" },
+    "(PO<sub>3</sub>)<sup>-3</sup>Ni<sup>+3</sup>": { formula: "NiPO<sub>3</sub>", nombre: "Fosfito de níquel (III)" },
     "(PO<sub>3</sub>)<sup>-3</sup>Hg<sup>+1</sup>": { formula: "Hg<sub>3</sub>(PO<sub>3</sub>)", nombre: "Fosfito de mercurio (I)" },
     "(NO<sub>2</sub>)<sup>-1</sup>H<sup>+1</sup>": { formula: "H(NO<sub>2</sub>)", nombre: "Ácido nitroso" },
     "(NO<sub>2</sub>)<sup>-1</sup>K<sup>+1</sup>": { formula: "K(NO<sub>2</sub>)", nombre: "Nitrito de potasio" },
@@ -60,13 +60,13 @@ const formulas = {
     "(NO<sub>2</sub>)<sup>-1</sup>Pb<sup>+4</sup>": { formula: "Pb(NO<sub>2</sub>)<sub>4</sub>", nombre: "Nitrito de plomo (IV)" },
     "(NO<sub>2</sub>)<sup>-1</sup>Ni<sup>+3</sup>": { formula: "Ni(NO<sub>2</sub>)<sub>3</sub>", nombre: "Nitrito de níquel (III)" },
     "(NO<sub>2</sub>)<sup>-1</sup>Hg<sup>+1</sup>": { formula: "Hg(NO<sub>2</sub>)", nombre: "Nitrito de mercurio (I)" },
-    "(ClO)<sup>-1</sup>H<sup>+1</sup>": { formula: "H(ClO)", nombre: "Ácido hipocloroso" },
-    "(ClO)<sup>-1</sup>K<sup>+1</sup>": { formula: "K(ClO)", nombre: "Hipoclorito de potasio" },
+    "(ClO)<sup>-1</sup>H<sup>+1</sup>": { formula: "HClO", nombre: "Ácido hipocloroso" },
+    "(ClO)<sup>-1</sup>K<sup>+1</sup>": { formula: "KClO", nombre: "Hipoclorito de potasio" },
     "(ClO)<sup>-1</sup>Ba<sup>+2</sup>": { formula: "Ba(ClO)<sub>2</sub>", nombre: "Hipoclorito de bario" },
     "(ClO)<sup>-1</sup>Al<sup>+3</sup>": { formula: "Al(ClO)<sub>3</sub>", nombre: "Hipoclorito de aluminio" },
     "(ClO)<sup>-1</sup>Pb<sup>+4</sup>": { formula: "Pb(ClO)<sub>4</sub>", nombre: "Hipoclorito de plomo (IV)" },
     "(ClO)<sup>-1</sup>Ni<sup>+3</sup>": { formula: "Ni(ClO)<sub>3</sub>", nombre: "Hipoclorito de níquel (III)" },
-    "(ClO)<sup>-1</sup>Hg<sup>+1</sup>": { formula: "Hg(ClO)", nombre: "Hipoclorito de mercurio (I)" }
+    "(ClO)<sup>-1</sup>Hg<sup>+1</sup>": { formula: "HgClO", nombre: "Hipoclorito de mercurio (I)" }
     // Completa con el resto de combinaciones necesarias
 };
 
