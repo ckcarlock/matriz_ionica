@@ -40,12 +40,12 @@ const formulas = {
     "(OH)<sup>-1</sup>Ni<sup>+3</sup>": { formula: "Ni(OH)<sub>3</sub>", nombre: "Hidroxido de Niquel (III)"},
     "(OH)<sup>-1</sup>Hg<sup>+1</sup>": { formula: "HgOH", nombre: "Hidroxido de Mercurio (I)"}, 
     "(SO<sub>4</sub>)<sup>-2</sup>H<sup>+1</sup>": { formula: "H<sub>2</sub>SO<sub>4</sub>", nombre: "Acido Sulfúrico"},
-    "(SO<sub>4</sub>)<sup>-2</sup>K<sup>+1</sup>": { formula: "K<sub>2</sub>SO<sub>4</sub>", nombre: ""},
-    "(SO<sub>4</sub>)<sup>-2</sup>Ba<sup>+2</sup>": { formula: "<sub></sub>", nombre: ""},
-    "(SO<sub>4</sub>)<sup>-2</sup>Al<sup>+3</sup>": { formula: "<sub></sub>", nombre: ""},
-    "(SO<sub>4</sub>)<sup>-2</sup>Pb<sup>+4</sup>": { formula: "<sub></sub>", nombre: "(IV)"},
-    "(SO<sub>4</sub>)<sup>-2</sup>Ni<sup>+3</sup>": { formula: "<sub></sub>", nombre: "(III)"},
-    "(SO<sub>4</sub>)<sup>-2</sup>Hg<sup>+1</sup>": { formula: "<sub></sub>", nombre: "(I)"},
+    "(SO<sub>4</sub>)<sup>-2</sup>K<sup>+1</sup>": { formula: "K<sub>2</sub>SO<sub>4</sub>", nombre: "Sulfato de Potasio"},
+    "(SO<sub>4</sub>)<sup>-2</sup>Ba<sup>+2</sup>": { formula: "BaSO<sub>4</sub>", nombre: "Sulfato de bario"},
+    "(SO<sub>4</sub>)<sup>-2</sup>Al<sup>+3</sup>": { formula: "Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>", nombre: "Sulfato de Aluminio"},
+    "(SO<sub>4</sub>)<sup>-2</sup>Pb<sup>+4</sup>": { formula: "Pb(SO<sub>4</sub>)<sub>2</sub>", nombre: "Sulfato de Plomo (IV)"},
+    "(SO<sub>4</sub>)<sup>-2</sup>Ni<sup>+3</sup>": { formula: "Ni<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>", nombre: "Sulfato de Niquel (III)"},
+    "(SO<sub>4</sub>)<sup>-2</sup>Hg<sup>+1</sup>": { formula: "Hg<sub>2</sub>SO<sub>4</sub>", nombre: "Sulfato de Mercurio (I)"},
     // Completa con el resto de combinaciones necesarias
 };
 
