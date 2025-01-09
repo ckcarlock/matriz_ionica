@@ -45,7 +45,14 @@ const formulas = {
     "(SO<sub>4</sub>)<sup>-2</sup>Al<sup>+3</sup>": { formula: "Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>", nombre: "Sulfato de Aluminio"},
     "(SO<sub>4</sub>)<sup>-2</sup>Pb<sup>+4</sup>": { formula: "Pb(SO<sub>4</sub>)<sub>2</sub>", nombre: "Sulfato de Plomo (IV)"},
     "(SO<sub>4</sub>)<sup>-2</sup>Ni<sup>+3</sup>": { formula: "Ni<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>", nombre: "Sulfato de Niquel (III)"},
-    "(SO<sub>4</sub>)<sup>-2</sup>Hg<sup>+1</sup>": { formula: "Hg<sub>2</sub>SO<sub>4</sub>", nombre: "Sulfato de Mercurio (I)"},
+    "(SO<sub>4</sub>)<sup>-2</sup>Hg<sup>+1</sup>": { formula: "Hg<sub>2</sub>SO<sub>4</sub>", nombre: "Sulfato de Mercurio (I)"}, 
+    "(PO<sub>3</sub>)<sup>-3</sup>H<sup>+1</sup>": { formula: "H<sub>3</sub>PO<sub>3</sub>", nombre: "Acido Fosforoso"},
+    "(PO<sub>3</sub>)<sup>-3</sup>K<sup>+1</sup>": { formula: "K<sub>3</sub>PO<sub>3</sub>", nombre: "Fosfito de Potasio"},
+    "(PO<sub>3</sub>)<sup>-3</sup>Ba<sup>+2</sup>": { formula: "<sub></sub>", nombre: ""},
+    "(PO<sub>3</sub>)<sup>-3</sup>Al<sup>+3</sup>": { formula: "<sub></sub>", nombre: ""},
+    "(PO<sub>3</sub>)<sup>-3</sup>Pb<sup>+4</sup>": { formula: "<sub></sub>", nombre: "(IV)"},
+    "(PO<sub>3</sub>)<sup>-3</sup>Ni<sup>+3</sup>": { formula: "<sub></sub>", nombre: "(III)"},
+    "(PO<sub>3</sub>)<sup>-3</sup>Hg<sup>+1</sup>": { formula: "<sub></sub>", nombre: "(I)"},
     // Completa con el resto de combinaciones necesarias
 };
 
