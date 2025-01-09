@@ -60,13 +60,13 @@ const formulas = {
     "(NO<sub>2</sub>)<sup>-1</sup>Pb<sup>+4</sup>": { formula: "Pb(NO<sub>2</sub>)<sub>4</sub>", nombre: "Nitrito de Plomo (IV)"},
     "(NO<sub>2</sub>)<sup>-1</sup>Ni<sup>+3</sup>": { formula: "Ni(NO<sub>2</sub>)<sub>3</sub>", nombre: "Nitrito de Niquel(III)"},
     "(NO<sub>2</sub>)<sup>-1</sup>Hg<sup>+1</sup>": { formula: "Hg(NO<sub>2</sub>)", nombre: "Nitrito de Mercurio(I)"},
-    "H<sup>+1</sup>": { formula: "<sub></sub>", nombre: ""},
-    "K<sup>+1</sup>": { formula: "<sub></sub>", nombre: ""},
-    "Ba<sup>+2</sup>": { formula: "<sub></sub>", nombre: ""},
-    "Al<sup>+3</sup>": { formula: "<sub></sub>", nombre: ""},
-    "Pb<sup>+4</sup>": { formula: "<sub></sub>", nombre: "(IV)"},
-    "Ni<sup>+3</sup>": { formula: "<sub></sub>", nombre: "(III)"},
-    "Hg<sup>+1</sup>": { formula: "<sub></sub>", nombre: "(I)"},
+    "(ClO)<sup>-1</sup>H<sup>+1</sup>": { formula: "H(ClO)", nombre: "Acido Hipocloroso"},
+    "(ClO)<sup>-1</sup>K<sup>+1</sup>": { formula: "K(ClO)", nombre: "Hipoclorito de Potasio"},
+    "(ClO)<sup>-1</sup>Ba<sup>+2</sup>": { formula: "Ba(ClO)<sub>2</sub>", nombre: "Hipoclorito de Bario"},
+    "(ClO)<sup>-1</sup>Al<sup>+3</sup>": { formula: "Al(ClO)<sub>3</sub>", nombre: "Hipoclorito de Aluminio"},
+    "(ClO)<sup>-1</sup>Pb<sup>+4</sup>": { formula: "Pb(ClO)<sub>4</sub>", nombre: "Hipoclorito de Plomo (IV)"},
+    "(ClO)<sup>-1</sup>Ni<sup>+3</sup>": { formula: "Ni(ClO)<sub>3</sub>", nombre: "Hipoclorito de Niquel(III)"},
+    "(ClO)<sup>-1</sup>Hg<sup>+1</sup>": { formula: "Hg(ClO)", nombre: "Hipoclorito de Mercurio (I)"},
     // Completa con el resto de combinaciones necesarias
 };
 
